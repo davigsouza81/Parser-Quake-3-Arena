@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Analisador de logs do Quake 3 Arena</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.min.css'>
+
+</head>
+<body>
+<div class="container">
+<!--   Card para upload do arquivo -->
+  <div class="card">
+    <div class="card-body text-center">
+      <h3 class="card-title">Analisador de logs do Quake 3 Arena</h3>
+      <p class="card-text">Escolha um arquivo de log do do Quake 3 Arena e programa mostrará um relatório com os dados das partidas.</p>
+      <input type="file" id="selectFile" class="btn btn-outline-success"/>
+    </div>
+  </div>
+  
+<!--   Card que contera o ranking de kills -->
+  <div class="card" style="display: none">
+    <div class="card-body">
+      <h4 class="card-title text-center">Ranking de Kills</h4>
+      <ul class="list-group" id="ranking">
+      </ul>
+    </div>
+  </div>
+
+<!--   Card que contera o relarorio das partidas -->
+<div class="card" style="display: none">
+    <div class="card-body">
+      <h4 class="card-title text-center">Relatório</h4>
+      <p class="card-text" id="relatorio"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+  <script src='./assets/js/jquery.min.js'></script>
+<script  src="./assets/js/parser.js"></script>
+
+</body>
+</html>
